@@ -13,7 +13,11 @@
   "repository": "johnotander/gh-pinned-repos",
   "keywords": [],
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "got": "^6.3.0",
+    "is-blank": "^1.1.0"
+  },
   "devDependencies": {
     "ava": "*"
   }

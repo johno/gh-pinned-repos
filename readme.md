@@ -1,6 +1,6 @@
 # gh-pinned-repos [![Build Status](https://secure.travis-ci.org/johnotander/gh-pinned-repos.svg?branch=master)](https://travis-ci.org/johnotander/gh-pinned-repos) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-Get the pinned repos for a github username
+Get the pinned repos for a github username.
 
 ## Installation
 
@@ -13,7 +13,8 @@ npm install --save gh-pinned-repos
 ```javascript
 var ghPinnedRepos = require('gh-pinned-repos')
 
-ghPinnedRepos()  // => true
+ghPinnedRepos('johnotander')
+  .then(console.log) // [...]
 ```
 
 ## License

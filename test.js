@@ -1,8 +1,10 @@
 import test from 'ava'
 import ghPinnedRepos from './'
 
-test('gh-pinned-repos does something awesome', t => {
+test('gh-pinned-repos does something awesome', async t => {
   t.plan(1)
 
-  t.true(ghPinnedRepos())
+  const repos = await ghPinnedRepos('johnotander')
+  console.log(repos)
+  t.truthy(repos.length)
 })
