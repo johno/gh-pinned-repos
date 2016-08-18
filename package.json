@@ -11,7 +11,11 @@
     "test": "ava"
   },
   "repository": "johnotander/gh-pinned-repos",
-  "keywords": [],
+  "keywords": [
+    "github",
+    "repos",
+    "pinned"
+  ],
   "license": "MIT",
   "dependencies": {
     "cheerio": "^0.20.0",

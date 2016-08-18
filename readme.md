@@ -11,7 +11,7 @@ npm install --save gh-pinned-repos
 ## Usage
 
 ```javascript
-var ghPinnedRepos = require('gh-pinned-repos')
+const ghPinnedRepos = require('gh-pinned-repos')
 
 ghPinnedRepos('johnotander')
   .then(console.log) // [...]
