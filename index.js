@@ -12,7 +12,7 @@ module.exports = function ghPinnedRepos (username) {
   return got(`https://github.com/${username}`)
     .then(res => res.body)
     .then(cheerio.load)
-    .then(cash => cash('.mini-repo-list .pinned-repo-list-item'))
+    .then(cash => cash('.pinned-repo-item.public'))
     .then(repos => repos.map(getHref).get())
 }
 
